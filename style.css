@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#blocoinicial {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+}
