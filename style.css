@@ -24,9 +24,10 @@ body{
     width: max-content;
 }
 
-h1{
+h1, h2{
     margin: 0;
 }
+
 
 #Agencia{
     color: red;
@@ -34,4 +35,15 @@ h1{
 
 #welcome{
     color: white;
+}
+
+#titulopequeno{
+    color: red;
+    font-size: 1rem;
+}
+
+#subtitulo{
+    position: absolute;
+    top: 5%;
+    left: 23%;
 }
