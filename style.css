@@ -8,18 +8,20 @@ body{
     height: 40vh;
     background-color: black;
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#topo{
+    position: absolute;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 #tituloprincipal{
     display: flex;
-    justify-content: center;
-    gap: 1.5vh;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: max-content;
+    gap: 1.5vh;
     font-size: 110%;
     font-family: 'Inter', Arial, sans-serif;
 
