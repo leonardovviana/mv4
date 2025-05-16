@@ -32,9 +32,24 @@ h1, h2{
     margin: 0;
 }
 
-a{
+#botoeshome a{
     color: white;
+    font-size: 0.8rem;
+    font-family: 'Inter', Arial, sans-serif;
+    transition: transform 0.3s ease;
+
+}
+
+#botoeshome a:hover{
+    transform: scale(1.2);
+    text-shadow: 0 0 5px white;
+}
+
+a{
     text-decoration: none;
+}
+.footer-container a{
+    color: black;
 }
 
 
@@ -124,11 +139,12 @@ footer {
 
 #seçao1{
     width: 18rem;
-    
+    margin-right: 2rem;
 }
 
 #seçao2{
-    width: 18rem;
+    width: 14rem;
+
 
 }
 
