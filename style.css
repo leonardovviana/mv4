@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 #blocoinicial {
@@ -108,4 +109,19 @@ footer {
     align-items: center;
     margin-top: auto;
     width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    width: 70%;
+}
+
+#seçao1{
+    width: 18rem;
+    height: 2rem;
+}
+
+#seçao2{
+    width: 18rem;
+    height: 2rem;
 }
