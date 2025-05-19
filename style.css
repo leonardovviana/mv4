@@ -10,10 +10,10 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: url('img/background.png'); 
+    background-image: url('img/background.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     color: #ffffff;
 }
 
@@ -25,7 +25,7 @@ html, body {
 
 header {
     padding: 1.5rem 0;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 header .container-custom {
@@ -57,19 +57,24 @@ header nav a:hover {
 }
 
 #blocoinicial {
-width: 100%;
-height: 40vh;
-background-image: url('img/REDIRECIONAMENTO-INSTA-MV4FRASE-TOPO.png');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-flex-direction: column;
+    width: 100%;
+    min-height: 40vh;
+    background-image: url('img/REDIRECIONAMENTO-INSTA-MV4FRASE-TOPO.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: white;
+}
 
+#blocoinicial h1 {
+    text-align: center;
+    word-wrap: break-word;
 }
 
 #tituloprincipal {
@@ -102,14 +107,12 @@ h1, h2 {
 }
 
 .services h2 {
-font-family: 'Montserrat', sans-serif;
-font-weight: 600;
-font-size: 2rem;
-text-align: center;
-margin-bottom: 3rem;
-color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ea384c;
 }
-
 
 .services-container {
     display: flex;
@@ -140,6 +143,13 @@ color: #ffffff;
     border-radius: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    #blocoinicial {
+        min-height: 30vh;
+        background-size: cover;
+    }
+}
+
 @media (max-width: 500px) {
     .image-link {
         max-width: 95%;
@@ -157,21 +167,91 @@ color: #ffffff;
 }
 
 footer {
-padding: 3rem 0;
-background-color: rgba(0, 0, 0, 0.6);
-color: #cccccc;
-backdrop-filter: saturate(180%) blur(10px);
+    padding: 3rem 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #cccccc;
+    backdrop-filter: saturate(180%) blur(10px);
 }
 
-.footer-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* espaça as seções uniformemente */
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
 }
 
-@media (min-width: 768px) {
-    .footer-grid {
-        grid-template-columns: repeat(3, 1fr);
+#seçao1,
+#seçao2,
+#seçao3 {
+    flex: 1 1 280px; /* largura flexível com base mínima */
+    max-width: 350px;
+}
+
+footer h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ea384c;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ea384c;
+}
+
+footer p {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+}
+
+#rodapecompleto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto 0;
+    width: 100%;
+    text-align: center;
+}
+
+#seçao4 {
+    margin-top: 1rem;
+}
+
+hr {
+    height: 1px;
+    background-color: #444;
+    width: 68%;
+    margin: 2rem auto;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    #seçao1,
+    #seçao2,
+    #seçao3 {
+        max-width: 100%;
+        flex: 1 1 100%;
+        text-align: center;
     }
 }
 
@@ -210,25 +290,6 @@ footer p {
     margin: auto;
 }
 
-.footer-container {
-    display: flex;
-    width: 68%;
-    justify-content: center;
-}
-
-#seçao1 {
-    width: 18rem;
-    margin-right: 2rem;
-}
-
-#seçao2 {
-    width: 14rem;
-}
-
-#seçao3 {
-    width: 18rem;
-}
-
 #seçao4 {
     text-align: center;
 }
@@ -238,15 +299,6 @@ hr {
     background-color: black;
     width: 68%;
     margin: 2rem;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .min-h-screen {
