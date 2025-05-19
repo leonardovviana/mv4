@@ -176,7 +176,7 @@ footer {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; /* espaça as seções uniformemente */
+    justify-content: space-around;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -187,7 +187,7 @@ footer {
 #seçao1,
 #seçao2,
 #seçao3 {
-    flex: 1 1 280px; /* largura flexível com base mínima */
+    flex: 1 1 280px;
     max-width: 350px;
 }
 
