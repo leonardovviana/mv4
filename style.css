@@ -1,11 +1,11 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', Arial, sans-serif;
-}
+    }
 
-html, body {
+    html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -15,56 +15,55 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
-}
+    }
 
-.container-custom {
+    .container-custom {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-}
-.container-custom h2{
-    color: white;
-}
+    }
 
-header {
+    .container-custom h2 {
+    color: white;
+    }
+
+    header {
     padding: 1.5rem 0;
     background-color: rgba(0, 0, 0, 0.7);
-}
+    }
 
-header .container-custom {
+    header .container-custom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    }
 
-header .logo img {
+    header .logo img {
     max-height: 60px;
     width: auto;
     height: auto;
     display: block;
-}
+    }
 
-header nav {
+    header nav {
     display: flex;
     gap: 2rem;
-}
+    }
 
-header nav a {
+    header nav a {
     color: #cccccc;
     text-decoration: none;
     transition: color 0.3s;
-}
+    }
 
-header nav a:hover {
+    header nav a:hover {
     color: #ea384c;
-}
+    }
 
-#blocoinicial {
+    #blocoinicial {
+    position: relative;
     width: 100%;
     min-height: 40vh;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,63 +71,63 @@ header nav a:hover {
     padding: 1rem;
     box-sizing: border-box;
     color: white;
-}
-
-#blocoinicial h1 {
     text-align: center;
-    word-wrap: break-word;
-}
+    overflow: hidden;
+    }
 
-.banner-img{
-    width: 100vw;
+    .banner-img {
+    width: 100%;
     height: auto;
-}
+    max-width: 2000px;
+    display: block;
+    }
 
-#tituloprincipal {
+    #tituloprincipal {
     display: flex;
     align-items: center;
     gap: 1.5vh;
     font-size: 110%;
     font-family: 'Inter', Arial, sans-serif;
     color: white;
-}
+    }
 
-h1, h2 {
+    h1, h2 {
     margin: 0;
-}
+    }
 
-#Agencia {
+    #Agencia {
     color: red;
-}
+    }
 
-.divisor-vermelho {
+    .divisor-vermelho {
     width: 100%;
     height: 3px;
     background-color: #ea384c;
     margin: 2rem 0;
-}
+    }
 
-.services {
+    .services {
     padding: 3rem 0;
     color: white;
-}
+    }
 
-.services h2 {
+    .services h2 {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 3rem;
     color: white;
-}
+    font-family: 'Montserrat', sans-serif;
+    }
 
-.services-container {
+    .services-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-}
+    }
 
-.image-link {
+    .image-link {
     display: block;
     width: 100%;
     max-width: 900px;
@@ -136,28 +135,39 @@ h1, h2 {
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 0.5rem;
     overflow: hidden;
-}
+    }
 
-.image-link:hover {
+    .image-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-}
+    }
 
-.image-link img {
+    .image-link img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 0.5rem;
-}
+    }
 
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
     #blocoinicial {
         min-height: 30vh;
-        background-size: cover;
     }
-}
 
-@media (max-width: 500px) {
+    #tituloprincipal h1 {
+        font-size: 1.5rem;
+    }
+
+    #Agencia {
+        font-size: 1.8rem;
+    }
+
+    .services {
+        padding-top: 1rem;
+    }
+    }
+
+    @media (max-width: 500px) {
     .image-link {
         max-width: 95%;
         margin-left: auto;
@@ -171,16 +181,16 @@ h1, h2 {
     .services h2 {
         margin-bottom: 2rem;
     }
-}
+    }
 
-footer {
+    footer {
     padding: 3rem 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: #cccccc;
     backdrop-filter: saturate(180%) blur(10px);
-}
+    }
 
-.footer-container {
+    .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -189,64 +199,65 @@ footer {
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
-}
+    }
 
-#seçao1,
-#seçao2,
-#seçao3 {
+    #seçao1,
+    #seçao2,
+    #seçao3 {
     flex: 1 1 280px;
     max-width: 350px;
-}
+    text-align: left;
+    }
 
-footer h3 {
+    footer h3 {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #ea384c;
-}
+    }
 
-.footer-links {
+    .footer-links {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-}
+    }
 
-.footer-links a {
+    .footer-links a {
     color: #cccccc;
     text-decoration: none;
     transition: color 0.3s;
-}
+    }
 
-.footer-links a:hover {
+    .footer-links a:hover {
     color: #ea384c;
-}
+    }
 
-footer p {
+    footer p {
     color: #cccccc;
     margin-bottom: 0.5rem;
-}
+    }
 
-#rodapecompleto {
+    #rodapecompleto {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2rem auto 0;
     width: 100%;
     text-align: center;
-}
+    }
 
-#seçao4 {
+    #seçao4 {
     margin-top: 1rem;
-}
+    }
 
-hr {
+    hr {
     height: 1px;
     background-color: #444;
     width: 68%;
     margin: 2rem auto;
-}
+    }
 
-@media (max-width: 600px) {
+    @media (max-width: 600px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -260,66 +271,30 @@ hr {
         flex: 1 1 100%;
         text-align: center;
     }
-}
+    }
 
-footer h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #ea384c;
-}
+    #seçao1 {
+        margin-left: 3%;
+    }
+    #seçao2 {
+        margin-left: 12%;
+    }
 
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.footer-links a {
-    color: #cccccc;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-links a:hover {
-    color: #ea384c;
-}
-
-footer p {
-    color: #cccccc;
-    margin-bottom: 0.5rem;
-}
-
-#rodapecompleto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-
-#seçao4 {
-    text-align: center;
-}
-
-hr {
-    height: 0.00001px;
-    background-color: black;
-    width: 68%;
-    margin: 2rem;
-}
-
-.min-h-screen {
+    #seçao3 {
+        margin-left: 5%;
+    }
+    .min-h-screen {
     min-height: 100vh;
-}
+    }
 
-.flex {
+    .flex {
     display: flex;
-}
+    }
 
-.flex-col {
+    .flex-col {
     flex-direction: column;
-}
+    }
 
-.flex-grow {
+    .flex-grow {
     flex-grow: 1;
-}
+    }
