@@ -1,7 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 #blocoinicial {
@@ -11,12 +26,9 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-}
-
-#topo {
-    position: absolute;
-    width: 100%;
-    margin-top: 3%;
+    align-items: center;
+    color: white;
+    flex-direction: column;
 }
 
 #tituloprincipal {
@@ -25,6 +37,7 @@ body {
     gap: 1.5vh;
     font-size: 110%;
     font-family: 'Inter', Arial, sans-serif;
+    color: white;
 }
 
 h1, h2 {
@@ -34,8 +47,8 @@ h1, h2 {
 #botoeshome a {
     color: white;
     font-size: 0.8rem;
-    font-family: 'Inter', Arial, sans-serif;
     transition: transform 0.3s ease;
+    font-family: 'Inter', Arial, sans-serif;
 }
 
 #botoeshome a:hover {
@@ -79,7 +92,6 @@ a {
     display: flex;
     gap: 2vw;
     font-size: 0.8rem;
-    font-family: 'Inter', Arial, sans-serif;
 }
 
 #nossosservicos {
@@ -99,17 +111,26 @@ a {
     width: 100%;
 }
 
-#botoes a{
+#botoes a {
     width: 100%;
     display: flex;
-justify-content: center
+    justify-content: center;
 }
 
-#botoes img{
+#botoes img {
     width: 90%;
     height: auto;
-    max-width: 800px;
-    aspect-ratio: 16/8;
+    max-width: 900px; /* fixo maior para desktop */
+    aspect-ratio: 16 / 8;
+}
+
+@media (max-width: 500px) {
+    #botoes img {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
 }
 
 footer {
@@ -155,4 +176,177 @@ hr {
     background-color: black;
     width: 68%;
     margin: 2rem;
+}
+
+header {
+    padding: 1.5rem 0;
+    background-color: #000000;
+}
+
+header .container-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ea384c;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ea384c;
+}
+
+.services {
+    padding: 3rem 0;
+    background-color: white;
+    color: black;
+}
+
+.services h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ea384c;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.image-link {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.image-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.image-link img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 500px) {
+    .image-link {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services {
+        padding: 2rem 0.5rem;
+    }
+
+    .services h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+footer {
+    padding: 3rem 0;
+    background-color: #000000;
+    color: #cccccc;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+footer h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ea384c;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ea384c;
+}
+
+footer p {
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: 1px solid #333333;
+}
+
+.footer-bottom p {
+    color: #888888;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-grow {
+    flex-grow: 1;
 }

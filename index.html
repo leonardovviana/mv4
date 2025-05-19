@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agência Mv4</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agência MV4</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="blocoinicial"> 
-        <div id="topo">
-            <div id="subtitulo">
-                <h2 id="titulopequeno">Agência MV4</h2>
-            </div>
-            <div id="botoeshome">
-                <a href="">Home</a>
-                <a href="">Services</a>
-                <a href="">Contact</a>
-            </div>
-        </div>
-        
-        <div id="tituloprincipal">
-            <h1 id="welcome">Welcome to </h1>
-            <h1 id="Agencia"> Agência MV4</h1>
-        </div>
+<div class="min-h-screen flex flex-col">
+    <header>
+    <div class="container-custom">
+        <div class="logo">Agência MV4</div>
+        <nav>
+        <a href="#">Home</a>
+        <a href="#services">Nossos Serviços</a>
+        <a href="#contact">Contato</a>
+        </nav>
+    </div>
+    </header>
+
+    <div id="blocoinicial">
+    <div id="tituloprincipal">
+        <h1 id="welcome">Welcome to </h1>
+        <h1 id="Agencia"> Agência MV4</h1>
+    </div>
     </div>
 
-    <div id="nossosservicos">
-        <h1>Nossos Serviços</h1>
-    </div>
+    <section class="services white-bg" id="services">
+    <div class="container-custom">
+        <h2>Nossos Serviços</h2>
 
-    <div id="botoes">
-        <a href="">
-            <img src="img\REDIRECIONAMENTO-INSTA-MV4WHATSAPP.png" alt="Whatsapp">
+        <div class="services-container" id="botoes">
+        <a href="" class="image-link">
+            <img src="img/REDIRECIONAMENTO-INSTA-MV4WHATSAPP.png" alt="Whatsapp" loading="lazy" />
         </a>
-
-        <a href="">
-            <img src="img\REDIRECIONAMENTO-INSTA-MV4GUIA-DE-SAUDE.png" alt="Guia de Saúde">
+        <a href="" class="image-link">
+            <img src="img/REDIRECIONAMENTO-INSTA-MV4GUIA-DE-SAUDE.png" alt="Guia de Saúde" loading="lazy" />
         </a>
-
-        <a href="">
-            <img src="img\REDIRECIONAMENTO-INSTA-MV4FOLHA-DO-PAJEU.png" alt="Folha do Pajeu">
+        <a href="" class="image-link">
+            <img src="img/REDIRECIONAMENTO-INSTA-MV4FOLHA-DO-PAJEU.png" alt="Folha do Pajeu" loading="lazy" />
         </a>
-
-        <a href="">
-            <img src="img\REDIRECIONAMENTO-INSTA-MV4GESTAO-DE-MIDIAS.png" alt="Gestão de Mídias">
+        <a href="" class="image-link">
+            <img src="img/REDIRECIONAMENTO-INSTA-MV4GESTAO-DE-MIDIAS.png" alt="Gestão de Mídias" loading="lazy" />
         </a>
-
-        <a href="">
-            <img src="img\REDIRECIONAMENTO-INSTA-MV4EDITORA-MV4.png" alt="Editora MV4">
+        <a href="" class="image-link">
+            <img src="img/REDIRECIONAMENTO-INSTA-MV4EDITORA-MV4.png" alt="Editora MV4" loading="lazy" />
         </a>
-
-        <a href="">
-            <img src="img\REDIRECIONAMENTO-INSTA-MV4TV-FACTUS.png" alt="Tv Factus">
+        <a href="" class="image-link">
+            <img src="img/REDIRECIONAMENTO-INSTA-MV4TV-FACTUS.png" alt="Tv Factus" loading="lazy" />
         </a>
-
-        <a href="">
-            <img src="img\REDIRECIONAMENTO-INSTA-MV4portifolio-mv4.png" alt="Portfólio">
+        <a href="" class="image-link">
+            <img src="img/REDIRECIONAMENTO-INSTA-MV4portifolio-mv4.png" alt="Portfólio" loading="lazy" />
         </a>
-    </div>
-
-    <footer>
-        <div id="rodapecompleto">
-            <div class="footer-container">
-                <div id="seçao1">
-                    <h3>Agência MV4</h3>
-                    <p>Connect with us on social media to learn more about our services and how we can help your business.</p>
-                </div>
-                <div id="seçao2">
-                    <h3>Connect</h3>
-                    <a href="https://www.instagram.com/agenciamv4?igsh=bmJjdDkycjg3cDF5">Instagram <br></a>
-                    <a href="#">Facebook <br></a>
-                    <a href="#">Twitter</a>
-                </div>
-                <div id="seçao3">
-                    <h3>Contact</h3>
-                    <p>contact@agenciamv4.com</p>
-                    <p>+1 (555) 123-4567</p>
-                </div>
-            </div>
-            <hr>
-            <div id="seçao4">
-                <p>© 2025 Agência MV4. All rights reserved.</p>
-            </div>
         </div>
+    </div>
+    </section>
+
+    <div class="flex-grow"></div>
+
+    <footer id="contact">
+    <div class="container-custom" id="rodapecompleto">
+        <div class="footer-container footer-grid">
+        <div id="seçao1">
+            <h3>Agência MV4</h3>
+            <p>
+            Connect with us on social media to learn more about our services and how we can help your
+            business.
+            </p>
+        </div>
+        <div id="seçao2" class="footer-links">
+            <h3>Connect</h3>
+            <a href="https://www.instagram.com/agenciamv4" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+        <div id="seçao3">
+            <h3>Contato</h3>
+            <p>agenciamv4@gmail.com</p>
+            <p>(87) 99635-9144</p>
+        </div>
+        </div>
+        <hr />
+        <div id="seçao4" style="text-align: center;">
+        <p>© 2025 Agência MV4. All rights reserved.</p>
+        </div>
+    </div>
     </footer>
+</div>
 </body>
 </html>
