@@ -132,14 +132,17 @@
     width: 100%;
     max-width: 900px;
     margin-bottom: 1.5rem;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     border-radius: 0.5rem;
     overflow: hidden;
+    position: relative;
+    background-color: #ea384c;
     }
 
     .image-link:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #ff6f61;
     }
 
     .image-link img {
@@ -147,11 +150,17 @@
     height: auto;
     display: block;
     border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+    }
+
+    .image-link:hover img {
+    transform: scale(1.1);
     }
 
     @media (max-width: 768px) {
     #blocoinicial {
         min-height: 30vh;
+        background-size: cover;
     }
 
     #tituloprincipal h1 {
@@ -274,15 +283,16 @@
     }
 
     #seçao1 {
-        margin-left: 3%;
+    margin-left: 3%;
     }
     #seçao2 {
-        margin-left: 12%;
+    margin-left: 12%;
     }
 
     #seçao3 {
-        margin-left: 5%;
+    margin-left: 5%;
     }
+
     .min-h-screen {
     min-height: 100vh;
     }
