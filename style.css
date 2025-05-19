@@ -57,15 +57,19 @@ header nav a:hover {
 }
 
 #blocoinicial {
-    width: 100%;
-    height: 40vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    flex-direction: column;
+width: 100%;
+height: 40vh;
+background-image: url('img/REDIRECIONAMENTO-INSTA-MV4FRASE-TOPO.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+flex-direction: column;
+
 }
 
 #tituloprincipal {
@@ -98,12 +102,14 @@ h1, h2 {
 }
 
 .services h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: #ea384c;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+font-size: 2rem;
+text-align: center;
+margin-bottom: 3rem;
+color: #ffffff;
 }
+
 
 .services-container {
     display: flex;
@@ -151,9 +157,10 @@ h1, h2 {
 }
 
 footer {
-    padding: 3rem 0;
-    background-color: #000000;
-    color: #cccccc;
+padding: 3rem 0;
+background-color: rgba(0, 0, 0, 0.6);
+color: #cccccc;
+backdrop-filter: saturate(180%) blur(10px);
 }
 
 .footer-grid {
