@@ -278,21 +278,18 @@
     #seçao3 {
         max-width: 100%;
         flex: 1 1 100%;
+        margin-left: 7%;
         text-align: center;
     }
     }
 
     #seçao1 {
-    margin-left: 3%;
+        margin-left: 5%;
     }
     #seçao2 {
-    margin-left: 12%;
+        margin-left: 5%;
     }
-
-    #seçao3 {
-    margin-left: 5%;
-    }
-
+    
     .min-h-screen {
     min-height: 100vh;
     }
